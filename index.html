@@ -292,6 +292,9 @@ Conceptualized , Developed and Designed by me
     scene.background = new THREE.Color( 0x87CEEB );
     // const geo = new BufferGeometryUtils.Geometry();
     const geo = new THREE.BufferGeometry();
+    const tuft1 = new THREE.SphereGeometry(1.5,7,8);
+    tuft1.translate(-2,0,0);
+    geo.merge(tuft1);
 
     
     const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
