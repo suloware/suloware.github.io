@@ -295,8 +295,21 @@ Conceptualized , Developed and Designed by me
     // const tuft1 = new THREE.SphereGeometry(1.5,7,8);
     // tuft1.translate(-2,0,0);
     // geo.merge(tuft1);
-    const geo = new THREE.BufferGeometry()
+  //  const geo = new THREE.BufferGeometry()
 
+    const tuft1 = new THREE.SphereGeometry(1.5,7,8)
+tuft1.translate(-2,0,0)
+
+
+const tuft2 = new THREE.SphereGeometry(1.5,7,8)
+tuft2.translate(2,0,0)
+
+
+const tuft3 = new THREE.SphereGeometry(2.0,7,8)
+tuft3.translate(0,0,0)
+
+
+    const geomA = BufferGeometryUtils.mergeBufferGeometries([tuft1, tuft2, tuft3], false);
 
     
     const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
