@@ -311,6 +311,14 @@ tuft3.translate(0,0,0)
 
     const geomA = BufferGeometryUtils.mergeBufferGeometries([tuft1, tuft2, tuft3], false);
 
+    cloud = new THREE.Mesh(
+    geomA,
+    new THREE.MeshLambertMaterial({
+        color:'white',
+        flatShading:true,
+    })
+)
+
     
     const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
 
