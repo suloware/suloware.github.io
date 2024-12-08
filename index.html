@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Audiowide");
+
+    canvas {
+       position: fixed;
+      top: 0;
+      left: 0;
+      overflow: hidden;
+    }
+
+    :root {
+      --dark-bg: rgba(15, 15, 15, 0.95);
+      --spacing: 200px;
+
+      font-family: 'Audiowide', sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+
+
+    main {
+  width: 100vw;
+  color: white;
+  z-index: 99;
+  position: absolute;
+  width: 100%;
+  margin: 0px auto;
+  padding: 120px 0px;
+  
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+    }
+  
+
+    h1,
+    h2,
+    h3,
+    blockquote {
+      font-family: 'Audiowide', sans-serif;
+      font-weight: 700;
+      font-style: normal;
+    }
+
+    canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+
+    header {
+      background: transparent;
+      grid-column: 2 / span 5;
+      font-size: 3rem;
+      font-family: 'Audiowide', sans-serif;
+    }
+    a{
+      background: linear-gradient(to right, #ADD8E6,#0096FF);
+      font-family: 'Audiowide', sans-serif;
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+      font-size: 1.5rem;
+    }
+
+    section {
+      grid-column: 2 / 8;
+      padding: 1rem;
+      background: linear-gradient(to right ,#ff7e26 , #ffa472 , #ffc99d);
+      font-size: 1.25rem;
+      line-height: 1.5;
+      margin-bottom: var(--spacing);
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+      font-size: 1.5rem;
+    }
+
+    blockquote {
+      margin: 0;
+      padding: 0;
+      grid-column: 2 / span 9;
+      margin-bottom: var(--spacing);
+
+
+    }
+
+    .g-t {
+      background: linear-gradient(to right, #f32170, #ff6b08, #cf23cf, #eedd44);
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+    }
+
+    blockquote p {
+      color: black;
+      background-color: white;
+      font-size: 4rem;
+      display: inline;
+      line-height: 1;
+      background: rgb(9, 9, 121);
+      background: linear-gradient(90deg, rgba(9, 9, 121, 1) 26%, rgba(0, 212, 255, 1) 70%);
+    }
+
+    .left {
+      grid-column: 6 / 12;
+/*       background: linear-gradient(to right, #cfcfe8,#a1a1ce,#7474b0); 
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text; */
+    } 
+
+    img {
+      grid-column: 2 / 8;
+      padding: 1rem;
+      max-width: 100%;
+      height: auto;
+      margin-bottom: var(--spacing);
+    }
+    .leftimg{
+      grid-column: 6 / 12;
+      padding: 1rem;
+      max-width: 100%;
+      height: auto;
+      margin-bottom: var(--spacing);
+    }
+@media only screen and (max-width: 576px) { /* Adjust breakpoint as needed */
+  main {
+  padding: 0px 0px;
+    }
+  header {
+    padding: 1rem;
+    font-size: 2rem;
+    grid-column: 1 / 12; /* Override for specific divs */
+  }
+  
+  section,
+  blockquote,
+  img,
+  .left,
+  .leftimg {
+    margin-bottom: 50px;
+    grid-column: 1 / 12; /* Override for specific divs */
+  }
+  
+}
+    
+}
+  </style>
+   <link rel="shortcut icon" type="image/svg+xml" href="Hash.svg">
+  <title> Mohamed Ali </title>
+
+</head>
+
+<body>
+
+  <canvas id="bg"></canvas>
+
+  <main>
+
+    <header>
+      <h1 class="g-t">Mohamed Badr Ali</h1>
+    </header>
+
+
+    <blockquote>
+      <p>Full Stack Devolper</p>
+    </blockquote>
+
+    <section>
+      <h2>📜 Manifesto</h2>
+      <p>
+        Hello
+        <br>I’m Mohamed Badreldin Ibrahim Ali
+      </p>
+
+      <p>
+        i'm a Full stack web Developer, fluent in c, c++, python, Javascript, dart, Golang and frameworks like
+        Django , React ,React Native, and three.js , also mobile app developing frameworks like flutter and React Native.
+      </p>
+      <p>
+        full stack developer with a flair for creating elegant solutions in the least amount of time. Developed an ecommerce
+        webapp, customer web portal. Passionate about software architecture and cloud computing. Regular attendee of web
+        developer meetups and hackathons.</p> </section>
+       <section class="left">
+        <h2> 📄 Eduction</h2>
+         <p> University of Gezira
+        Bachelor degree [Completed 6 semesters] Engineering & Technology with Specialization in Telecommunications </p>
+        
+       <p><a href="https://certificates.cs50.io/e9d6b8f3-74b1-4de0-871d-ba513f06db17.pdf?size=letter"> Harvard online </a>
+        CS50 Certificate Computer Science </p>
+        
+         <p><a href="https://credentials.edx.org/credentials/9e28483cdde54d028d908abdb71b6134/"> Harvard-edx </a>
+        Professional Certificate in Computer Science for Web Programming Computer Science Aug 2021 - Jan 2022</p>
+     
+
+      <p> Contact at
+        <br>(+968) 97272069
+        <br> mohamedbadrco@gmail.COM
+        <br> <a href="http://www.linkedin.com/in/mohamed-ali-bb92b422b/">Linked in</a>
+      </p> 
+    </section>
+     <img src="CS50x.png" width="800" alt="CS50x">
+    
+    <img class="leftimg"  src="V-c.png" width="800" alt="CS50web">
+    
+    <img src="P-C.png" width="800" alt="">
+
+    
+
+    <section class="light"  >
+      <h2> 💻 Projects</h2>
+
+      <p>  <br> <a href="https://github.com/mohamedbadrco/photo-hash">Photo Hash</a>  Fultter, Dart 
+Application using Flutter and Dart that generates ASCII art representations of images User uploads an image
+or selects one from the device. The application processes the image and converts it into ASCII art format.
+Users can customize the level of detail ,colors and style in the generated art that work on android ,Linux and
+web.
+        
+<br> <a href="https://github.com/mohamedbadrco/goim">G Hash</a> go-lang
+Conceptualized and developed a NFT project using Golang that generates unique, code-driven ASCII art
+GIFs. This project merges the artistic realm of ASCII art with the innovative world of NFTs. I leveraged
+Golang's powerful capabilities for generating dynamic ASCII art to create a collection of programmatically
+produced, animated NFTs.
+        
+<br> <a href="https://github.com/mohamedbadrco/twebot">Twitter-bot</a>  python 
+Developed and deployed a Twitter bot using Python, Tweepy this bot leverages my skills in automation and
+social media to increase brand awareness, provide valuable content to followers, foster community engagement
+
+ <br> <a href="https://mohamedbadrco.github.io/">Portfolio page</a>  HTML, CSS, JavaScript 
+Leveraging the power of HTML, CSS, and JavaScript, I've crafted a dynamic 3D portfolio website that
+showcases my professional journey. This interactive experience presents my skills, experience, and projects in
+a visually engaging format, making a lasting impression on potential employers.
+
+       <br> <a href="https://github.com/me50/mohamedbadrco/branches">CS50W labs</a>   Python ,Django 
+A collection of full functioning websites projects written in python using the Django framework , they include
+a search engine site, a wiki sit, a e commerce site, a mail app, a social media app and a calendar app
+Conceptualized , Developed and Designed by me
+      </p>
+
+    </section>
+
+        <img class="leftimg"  src="2022-12-22 13:31:22.61359038 +0200 CAT m=+2130.409248809rbg.gif" width="800" alt="CS50web">
+
+
+    <blockquote>
+      <p>The best way out is always through <br>-Robert Frost</p>
+    </blockquote>
+
+    <section class="left">
+      <h2> 📎 Work History</h2>
+
+      <h3> Microfinance unit  - an intern</h3>
+      <h4> accounting and costumer serves , working with exel and larg databases ,
+      </h4>
+
+      <h3>independent contractor- Documant Editing</h3>
+      <h4>
+        Editing document , Drawing graphics , Checking spelling, Formating documents 
+      </h4>
+
+      <h3> Freelance</h3>
+          <h4>Fiverr </h4>
+            <h4>making websites and webpags for fix price</h4>
+
+    </section>
+
+    <section >
+      <h2> skills</h2>
+      <p>  Python, JavaScript, PHP, Ruby, SQL, TypeScript, React, Django, RactNative, 
+        Ruby on rails, vuejs, Nodejs, Dart and flutter, MySQL ,GitHub , CSS , RUST APIs ,Bootstrap, Ruby
+         User Interface (UI), Application Development , HTML5 , JSON , Java</p>
+      </section>
+
+
+    <blockquote>
+      <p>Thanks for your Time!</p>
+    </blockquote>
+
+
+  </main>
+
+  <script type="module">
+    
+    import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.165.0/build/three.module.js'
+    
+
+    //Setup
+    const scene = new THREE.Scene();
+
+    const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+
+    const renderer = new THREE.WebGLRenderer({
+      canvas: document.querySelector('#bg'),
+    });
+
+    renderer.setPixelRatio(window.devicePixelRatio);
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    camera.position.setZ(30);
+    camera.position.setX(-3);
+
+    renderer.render(scene, camera);
+
+    var material_b = new THREE.ShaderMaterial({
+      uniforms: {
+        color1: {
+          value: new THREE.Color("red")
+        },
+        color2: {
+          value: new THREE.Color("blue")
+        }
+      },
+      vertexShader: `
+    varying vec2 vUv;
+
+    void main() {
+      vUv = uv;
+      gl_Position = projectionMatrix * modelViewMatrix * vec4(position,1.0);
+    }
+  `,
+      fragmentShader: `
+    uniform vec3 color1;
+    uniform vec3 color2;
+  
+    varying vec2 vUv;
+    
+    void main() {
+      
+      gl_FragColor = vec4(mix(color1, color2, vUv.y), 1.0);
+    }
+  `,
+      wireframe: true
+    });
+    
+     var material_p = new THREE.ShaderMaterial({
+      uniforms: {
+        color1: {
+          value: new THREE.Color("red")
+        },
+        color2: {
+          value: new THREE.Color("purple")
+        }
+      },
+      vertexShader: `
+    varying vec2 vUv;
+
+    void main() {
+      vUv = uv;
+      gl_Position = projectionMatrix * modelViewMatrix * vec4(position,1.0);
+    }
+  `,
+      fragmentShader: `
+    uniform vec3 color1;
+    uniform vec3 color2;
+  
+    varying vec2 vUv;
+    
+    void main() {
+      
+      gl_FragColor = vec4(mix(color1, color2, vUv.y), 1.0);
+    }
+  `,
+      wireframe: true
+    });
+
+    // Torus
+
+    const geometry = new THREE.TorusGeometry(10, 3, 16, 100);
+    // Function to generate random noise
+// function generateNoise(amplitude) {
+//   return Math.random() * amplitude - amplitude / 2;
+// }
+
+// Access vertices and apply noise
+// const vertices = geometry.attributes.position.array;
+// const lenv = vertices.length
+// for (let i = 0; i < lenv; i += 3) {
+//  // const vertex = vertices[i];
+//   if ((Math.random()/2) > Math.random() ){
+//   vertices[i] += Math.random() * 2.5;
+//   vertices[i+1] += Math.random() * 2.5;
+//   vertices[i+2] += Math.random() * 2.5; 
+//     }
+// }
+
+// // Update geometry
+// geometry.attributes.position.needsUpdate = true;
+    const torus = new THREE.Mesh(geometry, material_p);
+
+    scene.add(torus);
+
+    // Lights
+
+    const pointLight = new THREE.PointLight(0xffffff);
+    pointLight.position.set(5, 5, 5);
+
+    const ambientLight = new THREE.AmbientLight(0xffffff);
+    scene.add(pointLight, ambientLight);
+
+    function addStar() {
+      const geometry = new THREE.SphereGeometry(0.25, 24, 24);
+      const material = new THREE.MeshStandardMaterial({ color: 0xffffff });
+      const star = new THREE.Mesh(geometry, material);
+
+      const [x, y, z] = Array(3)
+        .fill()
+        .map(() => THREE.MathUtils.randFloatSpread(100));
+
+      star.position.set(x, y, z);
+      scene.add(star);
+    }
+
+    Array(200).fill().forEach(addStar);
+
+
+    const box = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), material_b);
+
+    scene.add(box);
+
+    box.position.z = -5;
+    box.position.x = 2;
+
+    // Scroll Animation
+
+    function moveCamera() {
+      const t = document.body.getBoundingClientRect().top;
+
+      camera.position.z = t * -0.002;
+      camera.position.x = t * -0.00005;
+      camera.rotation.y = t * -0.00005;
+      
+  // const scrollPosition = window.scrollY;
+  // const section = document.querySelector('.section');
+      
+  
+  // // Update background color of sections based on percentage
+  // section.style.backgroundColor = linear-gradient(to right, 
+  // `rgba(255, 255, 255, ${(100 - percentage) / 100})` #ADD8E6,
+  //   `rgba(255, 255, 255, ${(100 - percentage) / 100})` #0096FF); 
+     }
+
+    document.body.onscroll = moveCamera;
+    moveCamera();
+
+    // Animation Loop
+
+    function animate() {
+      requestAnimationFrame(animate);
+
+      torus.rotation.x += 0.01;
+      torus.rotation.y += 0.005;
+      torus.rotation.z += 0.01;
+      
+      box.rotation.x += 0.005;
+      box.rotation.y += 0.01;
+      box.rotation.z += 0.01;
+
+
+      // controls.update();
+
+      renderer.render(scene, camera);
+    }
+
+    animate();
+
+  </script>
+
+
+</body>
+
+</html>
