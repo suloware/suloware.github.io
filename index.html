@@ -417,18 +417,19 @@ Conceptualized , Developed and Designed by me
     scene.add(pointLight, ambientLight);
 
     function addStar() {
+      const base = THREE.MathUtils.randFloat(0.5,3)
 
-          const tuft1 = new THREE.SphereGeometry(1.5,7*2,8*2)
-    tuft1.translate(-2,0,0)
+          const tuft1 = new THREE.SphereGeometry(THREE.MathUtils.randFloat(0.5,3),7*2,8*2)
+    tuft1.translate(-(base),0,0)
     
     
-    const tuft2 = new THREE.SphereGeometry(1.5,7*2,8*2)
-    tuft2.translate(2,0,0)
+    const tuft2 = new THREE.SphereGeometry(THREE.MathUtils.randFloat(0.5,3),7*2,8*2)
+    tuft2.translate(base,0,0)
     
     
-    const tuft3 = new THREE.SphereGeometry(2.0,7*2,8*2)
+    const tuft3 = new THREE.SphereGeometry(base,7*2,8*2)
     tuft3.translate(0,0,0)
-      console.log(THREE.MathUtils.randFloat(1,2));
+      // console.log(THREE.MathUtils.randFloat(0.5,3));
       
     const geomA = BufferGeometryUtils.mergeBufferGeometries([tuft1, tuft2, tuft3], false);
     const positionAttribute = geomA.getAttribute( 'position' );
