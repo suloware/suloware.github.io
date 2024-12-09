@@ -312,6 +312,13 @@ tuft3.translate(0,0,0)
     const geomA = BufferGeometryUtils.mergeBufferGeometries([tuft1, tuft2, tuft3], false);
     const positionAttribute = geomA.getAttribute( 'position' );
     console.log(positionAttribute);
+    const vertex = new THREE.Vector3();
+
+    for ( let i = 0; i < positionAttribute.count; i ++ ) {
+      vertex.fromBufferAttribute( positionAttribute, i ); // read vertex
+      // do something with vertex
+      positionAttribute.setXYZ( i, vertex.x + (math.random()*2) , vertex.y + (math.random()*2) , vertex.z + (math.random()*2) ); // write coordinates back
+    }
 
     const cloud = new THREE.Mesh(
     geomA,
