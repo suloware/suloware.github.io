@@ -310,6 +310,7 @@ tuft3.translate(0,0,0)
 
 
     const geomA = BufferGeometryUtils.mergeBufferGeometries([tuft1, tuft2, tuft3], false);
+    console.log(geomA.vertices);
 
     const cloud = new THREE.Mesh(
     geomA,
