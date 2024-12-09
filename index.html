@@ -428,7 +428,7 @@ Conceptualized , Developed and Designed by me
     
     const tuft3 = new THREE.SphereGeometry(2.0,7*2,8*2)
     tuft3.translate(0,0,0)
-      console.log(THREE.MathUtils.randFloatSpread(1,2));
+      console.log(THREE.MathUtils.randFloat(1,2));
       
     const geomA = BufferGeometryUtils.mergeBufferGeometries([tuft1, tuft2, tuft3], false);
     const positionAttribute = geomA.getAttribute( 'position' );
