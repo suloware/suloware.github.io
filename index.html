@@ -503,17 +503,25 @@ Conceptualized , Developed and Designed by me
 
     function animate() {
       requestAnimationFrame(animate);
-
+      
       for ( let i = 0; i < 70; i ++ ) { 
+        if (clouds[i].position.z > 50 || clouds[i].position.z < -50){
+        clouds[i].position.z = clouds[i].position.z * -1
+        
+      }
+      if (clouds[i].position.x > 50 || clouds[i].position.x < -50){
+        clouds[i].position.x = clouds[i].position.x * -1
+      }
+
         clouds[i].position.z += derif[i][0]
         clouds[i].position.x += derif[i][1] 
         // clouds[i].position.y +=  derif[i][2]
         
       }
 
-      torus.rotation.x += 0.01;
-      torus.rotation.y += 0.005;
-      torus.rotation.z += 0.01;
+      // torus.rotation.x += 0.01;
+      // torus.rotation.y += 0.005;
+      // torus.rotation.z += 0.01;
       
       box.rotation.x += 0.005;
       box.rotation.y += 0.01;
