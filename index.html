@@ -418,6 +418,7 @@ Conceptualized , Developed and Designed by me
 
     const ambientLight = new THREE.AmbientLight(0xffffff);
     scene.add(pointLight, ambientLight);
+    let clouds = [];
 
     function addStar() {
       const base = THREE.MathUtils.randFloat(0.5,5)
@@ -460,9 +461,10 @@ Conceptualized , Developed and Designed by me
         .map(() => THREE.MathUtils.randFloatSpread(100));
 
       cloud.position.set(x, y, z);
+      clouds.push(cloud);
       scene.add(cloud);
     }
-
+     console.log(clouds);
     Array(100).fill().forEach(addStar);
 
 
