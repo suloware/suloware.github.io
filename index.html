@@ -288,7 +288,8 @@ Conceptualized , Developed and Designed by me
 
     //Setup
     const scene = new THREE.Scene();
-    scene.background = new THREE.Color( 0x87CEEB );
+    scene.background = new THREE.Color( 0x000000 );
+    // scene.background = new THREE.Color( 0x87CEEB );
     // const geo = new BufferGeometryUtils.Geometry();
     // const geo = new THREE.BufferGeometry();
     // const tuft1 = new THREE.SphereGeometry(1.5,7,8);
@@ -409,10 +410,10 @@ Conceptualized , Developed and Designed by me
 
     // Lights
 
-    const pointLight = new THREE.PointLight(0xff5566);
+    const pointLight = new THREE.PointLight(0xffffff);
     pointLight.position.set(5, 5, 5);
 
-    const ambientLight = new THREE.AmbientLight(0xff5566);
+    const ambientLight = new THREE.AmbientLight(0xffffff);
     scene.add(pointLight, ambientLight);
 
     function addStar() {
