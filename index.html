@@ -506,11 +506,11 @@ Conceptualized , Developed and Designed by me
       
       for ( let i = 0; i < 70; i ++ ) { 
         if (clouds[i].position.z > 50 || clouds[i].position.z < -50){
-        clouds[i].position.z = clouds[i].position.z * -1
+        derif[i][0] = derif[i][0] * -1
         
       }
       if (clouds[i].position.x > 50 || clouds[i].position.x < -50){
-        clouds[i].position.x = clouds[i].position.x * -1
+        derif[i][1] = derif[i][1] * -1
       }
 
         clouds[i].position.z += derif[i][0]
