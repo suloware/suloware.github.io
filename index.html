@@ -423,18 +423,18 @@ a visually engaging format, making a lasting impression on potential employers.
       // do something with vertex
       positionAttribute.setXYZ( i, vertex.x + (THREE.MathUtils.randFloatSpread(2) *0.2) , vertex.y + (THREE.MathUtils.randFloatSpread(2)*0.2) , vertex.z + (THREE.MathUtils.randFloatSpread(2)*0.2) ); // write coordinates back
     }
-    let cloud
+   //  let cloud
 
-      if ((THREE.MathUtils.randInt(0,100))%10 == 0 ){
-           cloud = new THREE.Mesh(geomA,material_b)
-   } else {
-           cloud = new THREE.Mesh(
+   //    if ((THREE.MathUtils.randInt(0,100))%10 == 0 ){
+   //         cloud = new THREE.Mesh(geomA,material_b)
+   // } else { }
+         const  cloud = new THREE.Mesh(
     geomA,
     new THREE.MeshLambertMaterial({
         color:'white',
         flatShading:true,
     }))
-      }
+      
   
 
       const [x, y, z] = Array(3)
