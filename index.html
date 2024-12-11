@@ -425,13 +425,17 @@ a visually engaging format, making a lasting impression on potential employers.
     }
     
 
-    const cloud = new THREE.Mesh(
+      if (i%10 == 0 ){
+          const cloud = new THREE.Mesh(geomA,material_b)
+   } else{
+          const cloud = new THREE.Mesh(
     geomA,
     new THREE.MeshLambertMaterial({
         color:'white',
         flatShading:true,
     })
 )
+      }
   
 
       const [x, y, z] = Array(3)
